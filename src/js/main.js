@@ -18,7 +18,6 @@ $(document).ready(function () {
             e.target.nextElementSibling.innerHTML = Number(prevCounter) - 1
         }
     })
-
     // Button listeners
     $('.order').click(function(){
         $('.popup-mail').css('display', 'block')
