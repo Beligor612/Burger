@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('.burger-form__slider').slick({
-		arrows: true,
+		arrows: false,
 		adaptiveHeight: true,
 		slidesToShow: 2,
 		slidesToScroll: 1,
