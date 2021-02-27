@@ -1,0 +1,39 @@
+.popup
+	padding-bottom: 9.25rem
+	position: relative
+	.spot
+		position: absolute
+		z-index: -1
+	&-mail
+		display: none
+		.spot
+			position: absolute
+			z-index: -1
+			top: -35px
+	&-phone
+		display: none
+		.spot
+			position: absolute
+			z-index: -1
+			top: -55px
+			left: 6%
+		&__form
+			margin-top: 4.375rem
+	&-input
+		border: none
+		display: inline-block
+		width: 60%
+		margin-right: 1.125rem
+		background-color: $light-color-red
+		padding: 1.29rem 
+		border-radius: 1200px
+		color: $main-color-red
+		font-family: $font-medium
+		font-weight: 500
+		font-size: 1rem
+		line-height: 1.1875rem
+		vertical-align: middle
+		&::placeholder
+			color: $main-color-red
+	&-submit
+		vertical-align: middle

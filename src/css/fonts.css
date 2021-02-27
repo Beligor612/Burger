@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'TT Norms Pro Regular';
+    src: url('../fonts/Regular/TTNormsPro-Regular.eot');
+    src: url('../fonts/Regular/TTNormsPro-Regular.ttf') format('truetype');
+    src: url('../fonts/Regular/TTNormsPro-Regular.woff') format('woff');
+    src: url('../fonts/Regular/TTNormsPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Norms Pro Medium';
+    src: url('../fonts/Medium/TTNormsPro-Medium.eot');
+    src: url('../fonts/Medium/TTNormsPro-Medium.ttf') format('truetype');
+    src: url('../fonts/Medium/TTNormsPro-Medium.woff') format('woff');
+    src: url('../fonts/Medium/TTNormsPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Black';
+    src: url('../fonts/Black/TTNormsPro-Black.eot');
+    src: url('../fonts/Black/TTNormsPro-Black.ttf') format('truetype');
+    src: url('../fonts/Black/TTNormsPro-Black.woff') format('woff');
+    src: url('../fonts/Black/TTNormsPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Norms Pro EBI';
+    src: url('../fonts/ExtraBold/TTNormsPro-Black.eot');
+    src: url('../fonts/ExtraBold/TTNormsPro-Black.ttf') format('truetype');
+    src: url('../fonts/ExtraBold/TTNormsPro-Black.woff') format('woff');
+    src: url('../fonts/ExtraBold/TTNormsPro-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}

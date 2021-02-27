@@ -1,0 +1,56 @@
+.burger-form
+	margin-top: 1.875rem
+	padding-bottom: 4rem
+	&__images
+		height: 420px
+		position: relative
+		.spot
+			width: 100%
+			position: absolute
+			top: 0
+			z-index: -1
+			left: 4%
+		.burger-solid
+			width: 100%
+			position: absolute
+			top: 0
+			z-index: 0
+			left: 3%
+		.button
+			position: absolute
+			top: 340px
+			z-index: 1
+			left: 27%
+
+	&__slider
+		margin-top: 2.3125rem
+		.slider-card
+			display: flex
+			flex-direction: column
+			justify-self: center
+			align-items: center
+			border: 1px solid $light-color-white
+			width: 140px
+			height: 180px
+			border-radius: 20px
+			padding: 1.5rem 1.125rem
+			margin: 0 1rem
+			img
+				align-self: center
+			&__image
+				display: flex
+				height: 50px
+			&__title
+				font-size: 0.875rem
+				margin: 0.75rem 0 
+			&__counter
+				display: flex
+				justify-content: space-around
+				align-items: center
+				.item
+					margin-right: 0.25rem
+					width: 32px
+					height: 32px
+					text-align: center
+				.counter-value
+					padding-top: 7px
