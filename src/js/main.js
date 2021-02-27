@@ -25,12 +25,17 @@ $(document).ready(function () {
     $('.close_icon').click(function(e){
         e.target.offsetParent.style.display = 'none'
     })
-    $('.menu_icon').click(function(e){
+    $('.menu_icon').click(function(){
         console.log('JI')
         $('.menu').css('display', 'block')
     })
-    $('.call_me_back').click(function(e){
+    $('.call_me_back').click(function(){
         $('.menu').css('display', 'none')
         $('.popup-phone').css('display', 'block')
+    })
+    
+    $('.make-burger').click(function(){
+        var scrollDiv = document.getElementById("burger-form").offsetTop;
+        window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
     })
 });
