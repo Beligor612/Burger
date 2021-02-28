@@ -5,6 +5,8 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		easing: 'linear',
+		autoplay: true,
+		speed: 1000,
 		infinite: true,
 		responsive: [
 			{

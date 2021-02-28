@@ -20,10 +20,17 @@ $(document).ready(function () {
     })
     // Button listeners
     $('.order').click(function(){
-        $('.popup-mail').css('display', 'block')
+        $('.popup-order').show()
     })
-    $('.close_icon').click(function(e){
-        e.target.offsetParent.style.display = 'none'
+    $('.popup-order-ok').click(function(){
+        $('.popup-order').hide()
+    })
+    $('.close_icon-order').click(function(){
+        $('.popup-order').hide()
+        
+    })
+    $('.close_icon_phone').click(function(){
+        $('.popup-call_me').hide()
     })
     $('.menu_icon').click(function(){
         console.log('JI')
@@ -31,9 +38,11 @@ $(document).ready(function () {
     })
     $('.call_me_back').click(function(){
         $('.menu').css('display', 'none')
-        $('.popup-phone').css('display', 'block')
+        $('.popup-call_me').css('display', 'block')
     })
-    
+    $('.popup-phone-ok').click(function(){
+        $('.popup-call_me').hide()
+    })
     $('.make-burger').click(function(){
         var scrollDiv = document.getElementById("burger-form").offsetTop;
         window.scrollTo({ top: scrollDiv, behavior: 'smooth'});

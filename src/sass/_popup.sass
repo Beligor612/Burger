@@ -1,17 +1,21 @@
 .popup
-	padding-bottom: 9.25rem
+	// padding-bottom: 9.25rem
 	position: fixed
 	top: 0
 	left: 0
-	height: 100vh
 	background-color: #fff
-	z-index: 2
 	overflow: hidden;
+	z-index: 10
+	&-header
+		margin-top: 2.5rem
+		width: 112%
+		.container
+			display: flex
+			justify-content: flex-end
 	&-title
 		margin-top: 9.4rem
 	&-mail
 		display: none
-
 		.spot
 			position: absolute
 			z-index: -1
@@ -25,6 +29,9 @@
 			left: 6%
 		&__form
 			margin-top: 4.375rem
+			display: flex
+			justify-content: center
+			align-items: center
 	&-input
 		border: none
 		display: inline-block
