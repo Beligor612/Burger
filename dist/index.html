@@ -8,7 +8,7 @@
     <!--CSS and Fonts -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/app.min.css">
-
+    <link rel="stylesheet" href="css/animate.min.css">
     <title>Burger Maker</title>
   </head>
   <body>
@@ -34,72 +34,74 @@
     <section class="greeting" id="greeting">
         <div class="container">
             <div class="greeting__text">
-                <h1 class="title">Make Your Burger</h1>
-                <p class="description">Parallax screen. Burger ingredients and emojis moving depending on the position of the mouse pointer.</p>
+                <h1 class="title animate__animated animate__fadeInLeft">Make Your Burger</h1>
+                <p class="description animate__animated animate__fadeInLeft animate__delay-1s">Parallax screen. Burger ingredients and emojis moving depending on the position of the mouse pointer.</p>
             </div>
         </div>
-        <div class="greeting__images">
+        <div class="greeting__images animate__animated animate__fadeInRight animate__delay-2s">
             <div class="spot">
                 <img src="img/greeting/Spot.png" alt="Spot">
             </div>
-            <div class="burger-group parallax-group" id='scene' data-relative-input="true">
-                <!-- <img src="img/greeting/Burger_group.png" alt="Burger group"> -->
-                <div data-depth="0.3" class="bun-top parallax-group__item">
-                    <img src="img/greeting/Bun_top.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="salat parallax-group__item">
-                    <img src="img/greeting/Salat.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="sous parallax-group__item">
-                    <img src="img/greeting/Sous.png" alt="" >
-                </div>
-                <div data-depth="0.4" class="cucumber-rings parallax-group__item">
-                    <img src="img/greeting/Cucumber_rings.png" alt="" >
-                </div>
-                <div data-depth="0.5" class="tomatoes parallax-group__item">
-                    <img src="img/greeting/Tomatoes.png" alt="" >
-                </div>
-                <div data-depth="0.4" class="steak parallax-group__item">
-                    <img src="img/greeting/Steak.png" alt="" >
-                </div>
-                <div data-depth="0.3" class="onion-rings parallax-group__item">
-                    <img src="img/greeting/Onion_rings.png" alt="" >
-                </div>
-                <div data-depth="0.3" class="cheese parallax-group__item">
-                    <img src="img/greeting/Cheese.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="salat2 parallax-group__item">
-                    <img src="img/greeting/Salat.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="sous2 parallax-group__item">
-                    <img src="img/greeting/Sous.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="bun-buttom parallax-group__item">
-                    <img src="img/greeting/Bun_buttom.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="smile-love parallax-group__item">
-                    <img src="img/greeting/Smile_love.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="bang parallax-group__item">
-                    <img src="img/greeting/Bang.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="bithday parallax-group__item">
-                    <img src="img/greeting/Bithday.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="like parallax-group__item">
-                    <img src="img/greeting/Like.png" alt="" >
-                </div>
-                <div data-depth="0.4" class="parallax-group__item tomat_ring1">
-                    <img src="img/greeting/Tomat_ring1.png" alt="">
-                </div>
-                <div data-depth="0.3" class="onion_ring parallax-group__item">
-                    <img src="img/greeting/Onion_ring1.png" alt="" >
-                </div>
-                <div data-depth="0.3" class="onion_ring_second parallax-group__item">
-                    <img src="img/greeting/Onion_ring1.png" alt="" >
-                </div>
-                <div data-depth="0.2" class="onion_ring_third parallax-group__item">
-                    <img src="img/greeting/Onion_ring1.png" alt="" >
+            <img src="img/greeting/Burger_group.png" alt="Burger group" class="mobile_group">
+            <div class="burger-group ">
+                <div class="parallax-group" id='scene' data-relative-input="true">
+                    <div data-depth="0.3" class="bun-top parallax-group__item">
+                        <img src="img/greeting/Bun_top.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="salat parallax-group__item">
+                        <img src="img/greeting/Salat.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="sous parallax-group__item">
+                        <img src="img/greeting/Sous.png" alt="" >
+                    </div>
+                    <div data-depth="0.4" class="cucumber-rings parallax-group__item">
+                        <img src="img/greeting/Cucumber_rings.png" alt="" >
+                    </div>
+                    <div data-depth="0.5" class="tomatoes parallax-group__item">
+                        <img src="img/greeting/Tomatoes.png" alt="" >
+                    </div>
+                    <div data-depth="0.4" class="steak parallax-group__item">
+                        <img src="img/greeting/Steak.png" alt="" >
+                    </div>
+                    <div data-depth="0.3" class="onion-rings parallax-group__item">
+                        <img src="img/greeting/Onion_rings.png" alt="" >
+                    </div>
+                    <div data-depth="0.3" class="cheese parallax-group__item">
+                        <img src="img/greeting/Cheese.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="salat2 parallax-group__item">
+                        <img src="img/greeting/Salat.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="sous2 parallax-group__item">
+                        <img src="img/greeting/Sous.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="bun-buttom parallax-group__item">
+                        <img src="img/greeting/Bun_buttom.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="smile-love parallax-group__item">
+                        <img src="img/greeting/Smile_love.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="bang parallax-group__item">
+                        <img src="img/greeting/Bang.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="bithday parallax-group__item">
+                        <img src="img/greeting/Bithday.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="like parallax-group__item">
+                        <img src="img/greeting/Like.png" alt="" >
+                    </div>
+                    <div data-depth="0.4" class="parallax-group__item tomat_ring1">
+                        <img src="img/greeting/Tomat_ring1.png" alt="">
+                    </div>
+                    <div data-depth="0.3" class="onion_ring parallax-group__item">
+                        <img src="img/greeting/Onion_ring1.png" alt="" >
+                    </div>
+                    <div data-depth="0.3" class="onion_ring_second parallax-group__item">
+                        <img src="img/greeting/Onion_ring1.png" alt="" >
+                    </div>
+                    <div data-depth="0.2" class="onion_ring_third parallax-group__item">
+                        <img src="img/greeting/Onion_ring1.png" alt="" >
+                    </div>
                 </div>
             </div>
             <button class="button button-circle make-burger">make burger</button>
@@ -112,7 +114,12 @@
                 <img src="img/burger-form/Spot.png" alt="Spot">
             </div>
             <div class="burger-solid">
-                <img src="img/burger-form/Burger_solid.png" alt="Burger group">
+                <img src="img/burger-form/Burger_solid.png" alt="Burger group" >
+            </div>
+            <div class="burger-form-creator">
+                <div class="burger-form__item bun_buttom">
+                    <img src="img/burger-form/Bun_bottom.png" alt="">
+                </div>
             </div>
             <button class="button button-order order">order</button>
         </div>
@@ -207,10 +214,9 @@
             </div>
         </div>
     </section>
-
     <!-- Modals -->
     <section class="popup popup-order">
-        <div class="popup-mail">
+        <div class="popup-mail animate__animated animate__fadeIn">
             <div class="container">
                 <div class="popup-header">
                     <div class="container">
@@ -223,7 +229,7 @@
                     </div>
                 </div>
                 <div class="spot">
-                    <img src="img/popup/Spot.png" alt="Spot">
+                    <img src="img/popup/Spot-2.png" alt="Spot">
                 </div>
                 <h2 class="popup-title big-descriptions">The order has been accepted and is already being&nbspprepared. Thank you.</h2>
                 <form action="#" class="popup-mail__form">
@@ -233,8 +239,8 @@
             </div>
         </div>
     </section>
-    <class class="popup popup-call_me">
-        <div class="popup-phone">
+    <section class="popup popup-call_me fade-in-modal-p">
+        <div class="popup-phone animate__animated animate__fadeIn">
             <div class="popup-header">
                 <div class="container">
                     <div class="header-logo">
@@ -246,7 +252,7 @@
                 </div>
             </div>
             <div class="spot">
-                <img src="img/popup/Spot.png" alt="Spot">
+                <img src="img/popup/Spot-2.png" alt="Spot">
             </div>
             <div class="container">
                 <h2 class="popup-title big-descriptions">Enter your phone and wait the a call from us.</h2>
@@ -286,17 +292,13 @@
         </div>
     </section>
     <!-- ./Modals -->
-    
     <!-- JavaScript -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src='js/slider.js'></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/main.min.js"></script>
-    
-    
-    
     <!-- ./JavaScript -->
   </body>
 </html>

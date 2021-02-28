@@ -1,0 +1,22 @@
+.hidden
+	// opacity: 0;
+	animation: my-anima
+	transition: all 1s
+
+@keyframes my-anima
+	0%
+		opacity: 0
+	100%
+		opacity: 0
+		display: none !important
+
+.visible
+	animation: my-anima2
+	transition: all 1s
+
+@keyframes my-anima2
+	0%
+		opacity: 0.2
+	100%
+		opacity: 1
+		display: block !important
