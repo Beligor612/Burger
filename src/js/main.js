@@ -48,3 +48,6 @@ $(document).ready(function () {
         window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
     })
 });
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);

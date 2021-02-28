@@ -30,7 +30,7 @@ function styles() {
 }
 
 function scripts() {
-	return src(['src/js/main.js','src/js/slider.js'])
+	return src(['src/js/main.js','src/js/slider.js', 'src/js/parallax.min.js'])
 	.pipe(concat('main.min.js'))
 	.pipe(uglify())
 	.pipe(dest('src/js'))
