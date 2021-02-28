@@ -78,7 +78,13 @@ $(document).ready(function () {
     })
     $('.counter_minus').click(function(e){
         let prevCounter = e.target.nextElementSibling.innerHTML
+        let name = e.target.parentElement.previousElementSibling.innerHTML
+        
         if(prevCounter != 0){
+            const array = $(`.${name.toLowerCase()}`)
+            console.log(array)
+            const len = array.length
+            $(`.${name.toLowerCase()}`)[len-1].remove()
             e.target.nextElementSibling.innerHTML = Number(prevCounter) - 1
         }
     })
