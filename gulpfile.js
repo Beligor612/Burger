@@ -20,7 +20,7 @@ function browsersync() {
 }
 
 function styles() {
-	return src('src/sass/style.sass')
+	return src(['src/sass/style.sass', 'src/css/fonts.css'])
 	.pipe(sass())
 	.pipe(concat('app.min.css'))
 	.pipe(autoprefixer({overrideBrowserslist:['last 10 versions'], grid: true}))
@@ -30,7 +30,7 @@ function styles() {
 }
 
 function scripts() {
-	return src('src/js/main.js')
+	return src(['src/js/main.js','src/js/slider.js'])
 	.pipe(concat('main.min.js'))
 	.pipe(uglify())
 	.pipe(dest('src/js'))
@@ -43,8 +43,8 @@ function images(){
 	.pipe(imagemin())
 	.pipe(dest('dist/img/'))
 }
-	function cleanimg() {
-	return del('src/dist/img/**/*', { force: true })
+	function cleaning() {
+		return del('src/dist/img/**/*', { force: true })
 }
 function startwatch() {
 	watch('src/sass/*.sass', styles)
