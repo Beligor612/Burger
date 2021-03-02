@@ -138,7 +138,14 @@ $(document).ready(function () {
         var scrollDiv = document.getElementById("burger-form").offsetTop;
         window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
     })
-    
+    $('.header__lang-active').on('click', ()=>{
+        $('.lang').toggleClass('is-active')
+    })
+    $('.header__lang-body_item').on('click', (e)=>{
+        console.log(e.target.innerHTML)
+        $('.header__lang-active').html(e.target.innerHTML)
+        $('.lang').toggleClass('is-active')
+    })
 });
 
 var scene = document.getElementById('scene');
